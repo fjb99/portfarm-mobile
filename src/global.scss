@@ -39,3 +39,9 @@
 :root {
   --ion-background-color: #ffffff;
 }
+
+// Fix the content being hidden behind the fixed topbar
+.ion-page {
+    top: 44px !important;
+}
+
