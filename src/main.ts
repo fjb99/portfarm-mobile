@@ -16,7 +16,8 @@ import {
   calendarClearOutline,
   peopleCircleOutline,
   personOutline,
-  checkboxOutline
+  checkboxOutline,
+  informationCircleOutline
   
 } from 'ionicons/icons';
 
@@ -34,7 +35,8 @@ addIcons({
   calendarClearOutline,
   peopleCircleOutline,
   personOutline,
-  checkboxOutline
+  checkboxOutline,
+  informationCircleOutline
 });
 
 

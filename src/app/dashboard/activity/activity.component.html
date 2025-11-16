@@ -1,0 +1,22 @@
+<div class="chart-card">
+
+  <div class="top-row">
+    <div class="inline">
+      <h2>Activity</h2>
+      <ion-icon name="information-circle-outline"></ion-icon>
+    </div>
+    <div>
+      <ion-select [(ngModel)]="selectedType" (ionChange)="onTypeChange()">
+        <ion-select-option value="clicks">Website Clicks</ion-select-option>
+        <ion-select-option value="sales">Sales</ion-select-option>
+        <ion-select-option value="views">Page Views</ion-select-option>
+      </ion-select>
+    </div>
+    
+  </div>
+
+  <div class="canvas-wrapper">
+    <canvas #activityCanvas></canvas>
+  </div>
+
+</div>
