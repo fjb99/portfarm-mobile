@@ -7,7 +7,17 @@ import {
   personCircleOutline,
   notificationsOutline,
   searchOutline,
-  menuOutline
+  menuOutline,
+  arrowUpOutline,
+  arrowDownOutline,
+  trendingUpOutline,
+  expandOutline,
+  ellipsisHorizontalOutline,
+  calendarClearOutline,
+  peopleCircleOutline,
+  personOutline,
+  checkboxOutline
+  
 } from 'ionicons/icons';
 
 // REGISTER ICONS
@@ -15,7 +25,16 @@ addIcons({
   personCircleOutline,
   notificationsOutline,
   searchOutline,
-  menuOutline
+  menuOutline,
+  arrowUpOutline,
+  arrowDownOutline,
+  trendingUpOutline,
+  expandOutline,
+  ellipsisHorizontalOutline,
+  calendarClearOutline,
+  peopleCircleOutline,
+  personOutline,
+  checkboxOutline
 });
 
 
