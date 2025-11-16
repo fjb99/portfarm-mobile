@@ -1,0 +1,90 @@
+.summary-card {
+  border-radius: 18px;
+  margin: 12px 16px;
+  padding-bottom: 10px;
+  --background: #fff;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+/* Header */
+ion-card-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e1e1e;
+}
+.menu-icon {
+  font-size: 22px;
+  color: #7b8a9a;
+}
+
+/* Stat boxes */
+.stat-box {
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 16px;
+  color: white;
+
+  ion-icon {
+    font-size: 34px;
+    margin-bottom: 8px;
+  }
+  .label {
+    font-size: 13px;
+    opacity: 0.9;
+  }
+  .value {
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
+
+/* Colors */
+.teal { background: #0c6f6b; }
+.yellow { background: #e7a51d; }
+.light {
+  background: #f4f7fb;
+  color: #334155;
+  ion-icon { color: #334155; }
+}
+
+/* Completion section */
+.completion-row {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.small-title {
+  font-size: 13px;
+  color: #7b8a9a;
+}
+
+.big {
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+}
+
+.trend {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0b8f5b;
+}
+
+/* Chart */
+.chart-container {
+  width: 140px;
+  height: 70px;
+  position: relative;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+}
+
+
+
+

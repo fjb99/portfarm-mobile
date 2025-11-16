@@ -1,0 +1,28 @@
+<div class="events-wrapper">
+
+  <div class="header">
+    <h3>Latest 4 Events</h3>
+    <span class="see-all">See All</span>
+  </div>
+
+  <div class="event-card" *ngFor="let ev of events">
+
+    <div class="inline-block">
+      <div class="name">{{ ev.title }}</div>
+      <ion-icon name="ellipsis-horizontal-outline" class="menu-icon"></ion-icon>
+      
+    </div>
+
+    <div class="inline-block" style="margin-top: 4px;">
+      <div class="date"><span>{{ ev.date }}</span></div>
+      <div class="badge" [ngClass]="ev.status">
+        <span class="dot"></span>
+        {{ ev.status | titlecase }}
+      </div>
+
+      
+    </div>
+
+  </div>
+
+</div>

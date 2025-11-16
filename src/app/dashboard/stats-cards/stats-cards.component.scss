@@ -1,0 +1,70 @@
+.stats-wrapper {
+  padding: 16px;
+}
+
+.stats-scroll {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  scroll-snap-type: x mandatory;
+}
+
+.stats-scroll::-webkit-scrollbar {
+  display: none; // no scrollbar visible
+}
+
+.stat-card {
+  min-width: 260px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  scroll-snap-align: start;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.label {
+  font-size: 14px;
+  color: #7c7c8a;
+}
+
+.value {
+  margin-top: 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.footer {
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last-week {
+  font-size: 12px;
+  color: #9ea0aa;
+}
+
+.percent {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.percent.up {
+  color: #22c55e;
+}
+
+.percent.down {
+  color: #ef4444;
+}

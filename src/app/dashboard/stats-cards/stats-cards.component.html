@@ -1,0 +1,26 @@
+<div class="stats-wrapper">
+  <div class="stats-scroll">
+    <div class="stat-card" *ngFor="let stat of stats">
+      
+      <div class="header">
+        <span class="label">{{ stat.label }}</span>
+        <ion-icon name="expand-Outline"></ion-icon>
+      </div>
+
+      <div class="value">{{ stat.value }}</div>
+
+      <div class="footer">
+        <span class="last-week">{{ stat.subLabel }}</span>
+
+        <span class="percent" [ngClass]="stat.direction">
+          <ion-icon [name]="getTrendIcon(stat.direction)"></ion-icon>
+          {{ stat.changePercent }}
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+ <!-- TODO: This looks related with all 3 big cards, so it will be 3 sorces in one to show this. Work in progress-->
+

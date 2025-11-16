@@ -1,0 +1,70 @@
+<ion-card class="summary-card">
+  <div class="card-inner">
+
+    <ion-card-header>
+      <ion-item lines="none">
+        <ion-label>
+          <h2>Agencies Summary</h2>
+        </ion-label>
+
+        <ion-icon
+          name="ellipsis-horizontal-outline"
+          slot="end"
+          class="menu-icon">
+        </ion-icon>
+      </ion-item>
+    </ion-card-header>
+
+    <ion-card-content>
+      
+      <!-- Row of 3 stats -->
+      <ion-grid>
+        <ion-row>
+
+          <ion-col size="4">
+            <div class="stat-box teal">
+              <ion-icon name="people-circle-outline"></ion-icon>
+              <p class="label">Events</p>
+              <p class="value">{{ summary?.events }}</p>
+            </div>
+          </ion-col>
+
+          <ion-col size="4">
+            <div class="stat-box yellow">
+              <ion-icon name="person-outline"></ion-icon>
+              <p class="label">Members</p>
+              <p class="value">{{ summary?.members }}</p>
+            </div>
+          </ion-col>
+
+          <ion-col size="4">
+            <div class="stat-box light">
+              <ion-icon name="checkbox-outline"></ion-icon>
+              <p class="label">Finished</p>
+              <p class="value">{{ summary?.finished }}</p>
+            </div>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+
+      <!-- Completion section -->
+      <div class="completion-row">
+
+        <div class="info">
+          <div class="small-title">On-time Completion Rate</div>
+          <div class="value-row">
+            <span class="big">{{ summary?.completionRate }}%</span>
+            <span class="trend">+{{ summary?.trend }}%</span>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <canvas #lineCanvas></canvas>
+        </div>
+
+      </div>
+
+    </ion-card-content>
+  </div>
+</ion-card>
